@@ -1,0 +1,51 @@
+/*########## footer ##########*/
+		#footerWrap{width:100%; height:425px; margin-top:650px; background-color:#2F2F37; text-align:left;}
+		#footerWrap #footer{width:1400px; height:100%; margin:0 auto; overflow:hidden;}
+
+
+	/*########## footer_upper ##########*/
+		#upper{width:100%; height:350px;} 
+		#upper ul{width:18%; padding-right:5%; float:left;}
+		#upper .wide_ul{width:31%}
+		
+		.white_bold{display:block; padding:60px 0 25px; color:#fff; font-family:Oswald, sans-serif; text-transform:uppercase; font-weight:700; font-size:15px; line-height:20px;}
+		.karla{font-family:Karla, sans-serif; font-size: 13px; line-height: 20px; color:#fff;}
+		.intro{color:hsla(0,0%,100%,.7); font-size:13px; line-height: 20px;}
+		.intro a.orange{color:#faaf52; text-decoration:underline;}
+		#upper .padding_bottom0{padding-bottom:30px;}
+		#upper .padding_bottom span{display:block; height:40px; padding-top:30px;}
+
+		#upper .narrow_div{float:left; width:13%/*5% 남음*/; padding-right:5%;}
+		#upper .narrow_div li{padding-bottom:13px; font-size:12px;}
+		#upper .narrow_div li a{color:hsla(0,0%,100%,.7);}
+		#upper .narrow_div li:hover a{text-decoration:underline; 
+		color:#fff;}
+
+		#upper .contact .position{position:relative;}
+		#upper .contact img{position:absolute; bottom:0; left:-3px;}
+		#upper .contact .karla{color:hsla(0,0%,100%,.7); margin-left:27px;}	
+		#upper .contact a:hover{text-decoration:underline; color:#fff;}
+		#upper li.white_bold{display:inline-block; width:85px; height:20px; padding-bottom:0; border-bottom:2px solid hsla(0,0%,100%,.7);}
+		#upper li.white_bold:hover{border-bottom:2px solid #fff;}
+		#upper li.white_bold a{color:#fff;}
+		#upper li.white_bold a:hover{text-decoration:none;}
+
+		#upper .follow_me{width:300px; float:left;}
+		#upper .follow_me ul{width:150px; height:33px; float:none;}
+		#upper .follow_me ul li{float:left; width:33px; height:100%;}
+		#upper .follow_me ul li a{position:relative; display:block; width:100%; height:100%;}
+		#upper .follow_me ul li a img{position:absolute; left:-8px;}
+		#upper .follow_me ul li:hover a img{transform:scale(1.2,1.2);}
+		#upper .follow_me ul .top2px a img{top:2px;}
+
+	/*########## footer_lower ##########*/
+		#lower{width:100%; height:15px; padding:30px 0; border-top:1px solid hsla(0,0%,100%,.2); color:hsla(0,0%,100%,.7); font-size:11px;}
+		#lower div{width:40%; float:left;}
+		#lower div span{padding-right:10px;}
+		#lower div .border_left{border-left:1px solid #999; padding-left:10px;}
+		#lower p {width:60%; text-align:right; float:left;}
+		#lower p a{color:hsla(0,0%,100%,.7);}
+		#lower p span{color:#fff;}
+		#lower p span:hover{text-decoration:underline; font-weight:400;}
+
+	
