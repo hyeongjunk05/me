@@ -2,7 +2,7 @@ $(document).ready(function(){
 		
 	$('#noah p span').hover(function(){
 		$('#noah div').css({'width':'190px'});
-		$('#noah div').stop().clearqueue().toggleClass('hehe');
+		$('#noah div').toggleClass('hehe');
 		$('#noah div span').css({'display':'inline'});
 		$('body').css({'backgroundImage':'url(img/background.jpg)', 'backgroundSize':'100%', 'backgroundRepeat':'no-repeat'});
 	},function(){
