@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$('#noah div').css({'width':'190px'});
 		$('#noah div').toggleClass('hehe');
 		$('#noah div span').css({'display':'inline'});
-		$('body').css({'backgroundImage':'url(img/background.jpg)', 'backgroundSize':'100% 100%', 'backgroundRepeat':'no-repeat'});
+		$('body').css({'backgroundImage':'url(img/background.jpg)', 'backgroundSize':'cover', 'backgroundRepeat':'no-repeat'});
 	},function(){
 		$('#noah div').css({'width':'250px'});
 		$('#noah div').removeClass();
