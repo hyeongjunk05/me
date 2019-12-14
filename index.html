@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+	<link href="https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap" rel="stylesheet">
+	<meta charset='utf-8'/>
+  <title>Noah Kim</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'/>
+  <link rel='shortcut icon' href='img/logo.png'/>
+  <link rel='apple-touch-icon' href='img/logo.png'/>
+  <link rel='stylesheet' type='text/css' href='css/footer.css'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src='js/toggleClass.js'></script>
+  <style>
+	/*####### 초기화  ########*/
+		*{margin:0; padding:0;}
+		li{list-style:none;}
+		a:link, a:visited{text-decoration:none;}
+		body, div, header, section, footer, address, ul, ul li, ol, ol li{margin:0; padding:0;}
+
+		#wrap{max-width:1920px; width:100%; height:400px; margin:0 auto; text-align:center;}
+	
+	/*####### header ########*/
+		header{width:100%; height:35%; margin-top:70px;}
+	
+	
+	/*####### container  ########*/
+		#container{width:100%; height:65%;}
+		#noah{width:100%; height:15%; color:#dedede; font-weight:700; font-size:20px;}
+		
+		#noah p{width:100%;}
+		#noah p span:hover{color:aqua; cursor:pointer; font-weight:700;}
+		#noah div{width:250px; height:320px; padding-top:80px; position:absolute; top:7%; left:20%; transition:all 2s; color:#fff;}
+		
+		.hehe{background-image:url('img/background1.jpg'); background-size:cover; background-repeat:no-repeat; border-radius:120px; box-shadow:10px 10px 10px rgba(0,0,170,0.7); text-align:center; text-shadow:4px 4px 4px rgba(200,200,200,0.6);}
+
+		#where{width:100%; height:30%;}
+		#where p{color:#dede00; font-weight:bold; transition:all 1s linear;}
+		
+		#sns{width:100%; height:55%; margin-top:50px;}
+		#sns div{width:15%; height:21%; padding-left:7%; margin:0 auto;}
+		#sns p{width:10%; float:left;}
+		#sns .margin_flag{margin:0 12%;}
+		#sns p a{width:100%; display:block;}
+		#sns p a img{width:100%;}
+
+	/*####### attach ########*/
+		#attach{display:block; width:100%; height:600px; background-image:url('img/farmer.jpeg'); background-repeat:no-repeat; background-size:100%; background-attachment:fixed; position:relative;}
+		#attach span{position:absolute; right:30px;
+			-webkit-animation:myani 2s infinite;
+		}
+		@keyframes myani{
+			0%{color:#000;}
+			50%{color:hsla(0,0%,100%,.7); text-shadow:1px 1px 1px #fff;}
+			100%{color:#000;}
+		}
+		#attach span:last-child{top:7px;}
+		#attach span:first-child{right:340px; top:3px;}
+
+		#businessman{display:none;}
+
+	
+	/*####### tablet 버전  ########*/
+		@media all and (min-width:768px) and (max-width:1024px){
+			#wrap{width:100%; height:400px; margin:0 auto; text-align:center;}
+			#noah div{display:none;}
+			#container{width:100%; height:65%;}
+			
+			#sns{width:320px; height:55%; margin:50px auto 0;}
+			#sns div{width:50%; height:21%; padding-left:7%; margin:0 auto;}
+			#sns p{width:16%; float:left;}
+			#sns .margin_flag{margin:0 18%;}
+			#sns p a{width:100%; display:block;}
+			#sns p a img{width:100%;}
+
+			#attach{display:block; width:100%; height:600px; background-image:url('img/farmer.jpeg'); background-repeat:no-repeat; background-size:100%; background-attachment:scroll;}
+
+			/*########## footer ##########*/
+				#footerWrap{width:100%; height:100%; background-color:#2F2F37; text-align:left;}
+				#footerWrap #footer{width:100%; height:100%;}
+
+				#footer:after{content:''; display:block; clear:both;}
+		
+			/*########## footer_upper ##########*/
+				#upper{width:94%; height:350px; padding:0 3%;} 
+				#upper ul{width:27%; padding-right:3%; float:left;}
+				#upper .wide_ul{width:34%;}
+
+				#upper .narrow_div{float:left; width:13%/*5% 남음*/; padding-right:5%;}
+
+				#upper li.white_bold{width:97px;}
+
+				#upper .follow_me{width:15%; float:left;}
+
+			/*########## footer_lower ##########*/
+
+				#lower{width:100%; height:100%; padding:15px 0; border-top:1px solid hsla(0,0%,100%,.2); color:hsla(0,0%,100%,.7); font-size:10px;}
+				#lower div{width:70%; padding-left:3%; float:left;}
+				#lower div span{padding-right:10px;}
+				#lower div .border_left{border-left:1px solid #999; padding-left:10px;}
+				#lower p {width:24%; padding-right:3%; text-align:right; float:left;}
+				#lower p a{color:hsla(0,0%,100%,.7);}
+				#lower p span{color:#fff;}
+				#lower p span:hover{text-decoration:underline; font-weight:700;}
+			
+		}
+
+	/*####### 스마트폰 가로버전  ########*/
+		@media all and (min-width:481px) and (max-width:767px){
+			
+			#wrap{width:100%; height:400px;}
+			header{width:100%; height:25%; margin:10px 0 23px;}
+			#noah{height:10%; margin-bottom:10px;}
+			#noah div{display:none;}
+			#where{height:20%;}
+			#sns{margin-top:15px; height:25%;}
+			#sns div{width:30%; padding-left:6%;}
+			#sns p{width:14%;}
+			#sns .margin_flag{margin:0 20%;}
+
+			#attach{height:400px; background-image:url('img/farmer.jpeg'); background-attachment:initial;}
+			#attach span{width:5%;}
+			#attach span:last-child{width:314px;}
+			
+			/*########## footer ##########*/
+				#footerWrap{width:100%; height:100%; background-color:#2F2F37; margin-top:380px;}
+				#footerWrap #footer{width:100%; height:100%; overflow:hidden;}
+
+				#footer:after{content:''; display:block; clear:both;}
+
+
+			/*########## footer_upper ##########*/
+				#upper{width:92%; height:100%; padding:0 4%;} 
+				#upper ul{width:100%; float:none;}
+				#upper .wide_ul{width:100%;}
+				#upper .wide_ul b{padding-top:20px;}
+
+				#upper .narrow_div{display:none;}
+				
+				#upper .contact{width:60%; height:123px; float:left;}
+				#upper .contact .white_bold{padding:20px 0 10px;}
+				#upper .contact .position{position:relative;}
+				#upper .contact img{position:absolute; bottom:0; left:-3px;}
+				#upper .contact .karla{color:hsla(0,0%,100%,.7); margin-left:27px;}	
+				#upper .contact a:hover{text-decoration:underline; color:#fff;}
+				#upper li.white_bold{display:none;}
+
+				#upper .follow_me{width:35%; height:75px; float:left;}
+				#upper .follow_me h4{width:100%; height:73%;}
+				#upper .follow_me b{padding-top:25px;}
+				#upper .follow_me ul{width:150px; height:40%; float:none;}
+				#upper .follow_me ul li{float:left; width:33px; height:100%;}
+				#upper .follow_me ul li a{position:relative; display:block; width:100%; height:100%;}
+				#upper .follow_me ul li a img{position:absolute; left:-8px;}
+				#upper .follow_me ul li:hover a img{transform:scale(1.2,1.2);}
+				#upper .follow_me ul .top2px a img{top:2px;}
+
+				#upper:after{content:''; display:block; clear:both;}
+			
+
+			#businessman{display:block; width:100%; position:relative;}
+			#businessman span{display:inline-block; width:7%; text-align:center; font-size:14px; transform:translatey(10px);}
+			
+
+			.span1{
+			-webkit-animation:ent1 4s infinite;}
+			@keyframes ent1{
+				6%{transform:translatey(25px);}
+				12%{transform:translatey(10px);}
+			}
+			.span2{
+			-webkit-animation:ent2 4s infinite;}
+			@keyframes ent2{
+				12%{transform:translatey(25px);}
+				18%{transform:translatey(10px);}
+			}
+			.span3{
+			-webkit-animation:ent3 4s infinite;}
+			@keyframes ent3{
+				18%{transform:translatey(25px);}
+				24%{transform:translatey(10px);}
+			}
+			.span4{
+			-webkit-animation:ent4 4s infinite;}
+			@keyframes ent4{
+				24%{transform:translatey(25px);}
+				30%{transform:translatey(10px);}
+			}
+			.span5{
+			-webkit-animation:ent5 4s infinite;}
+			@keyframes ent5{
+				36%{transform:translatey(25px);}
+				42%{transform:translatey(10px);}
+			}
+			.span6{
+			-webkit-animation:ent6 4s infinite;}
+			@keyframes ent6{
+				48%{transform:translatey(25px);}
+				54%{transform:translatey(10px);}
+			}
+			.span7{
+			-webkit-animation:ent7 4s infinite;}
+			@keyframes ent7{
+				54%{transform:translatey(25px);}
+				60%{transform:translatey(10px);}
+			}
+			.span8{
+			-webkit-animation:ent8 4s infinite;}
+			@keyframes ent8{
+				60%{transform:translatey(25px);}
+				66%{transform:translatey(10px);}
+			}
+			.span9{
+			-webkit-animation:ent9 4s infinite;}
+			@keyframes ent9{
+				66%{transform:translatey(25px);}
+				72%{transform:translatey(10px);}
+			}
+			.span10{
+			-webkit-animation:ent10 4s infinite;}
+			@keyframes ent10{
+				72%{transform:translatey(25px);}
+				78%{transform:translatey(10px);}
+			}
+			.span11{
+			-webkit-animation:ent11 4s infinite;}
+			@keyframes ent11{
+				78%{transform:translatey(25px);}
+				84%{transform:translatey(10px);}
+			}
+			.span12{
+			-webkit-animation:ent12 4s infinite;}
+			@keyframes ent12{
+				84%{transform:translatey(25px);}
+				90%{transform:translatey(10px);}
+			}
+		}
+
+	/*####### 스마트폰 세로버전  ########*/
+		@media all and (min-width:320px) and (max-width:480px){
+			
+			#wrap{width:100%; height:400px;}
+			header{width:100%; height:35%; margin-top:40px;}
+			#noah div{display:none;}
+			#sns{margin-top:15px; height:25%;}
+			#sns div{width:55%; padding-left:10%;}
+			#sns p{width:14%;}
+			#sns .margin_flag{margin:0 20%;}
+			
+			#attach{height:250px; background-image:url('img/me1.jpg'); background-attachment:initial;}
+			#attach span{width:40%; left:10px;}
+			#attach span:last-child{display:none;}
+			#attach span:after{content:'At Saipan.'; display:inline; 	-webkit-animation:myani 2s infinite;}
+		
+			/*########## footer ##########*/
+				#footerWrap{width:100%; height:54%; background-color:#2F2F37; margin-top:260px;}
+				#footerWrap #footer{width:100%; height:100%; overflow:hidden;}
+
+				#footer:after{content:''; display:block; clear:both;}
+
+
+			/*########## footer_upper ##########*/
+				#upper{width:95%; height:100%; padding-left:5%;} 
+				#upper ul{width:100%; float:none;}
+				#upper .wide_ul{display:none;}
+
+				#upper .narrow_div{display:none; float:none;}
+				
+				#upper .contact .white_bold{padding:20px 0 10px;}
+				#upper .contact .position{position:relative;}
+				#upper .contact img{position:absolute; bottom:0; left:-3px;}
+				#upper .contact .karla{color:hsla(0,0%,100%,.7); margin-left:27px;}	
+				#upper .contact a:hover{text-decoration:underline; color:#fff;}
+				#upper li.white_bold{display:none;}
+
+				#upper .follow_me{width:100%; height:75px; float:none;}
+				#upper .follow_me h4{width:100%; height:73%;}
+				#upper .follow_me b{padding-top:25px;}
+				#upper .follow_me ul{width:150px; height:40%; float:none;}
+				#upper .follow_me ul li{float:left; width:33px; height:100%;}
+				#upper .follow_me ul li a{position:relative; display:block; width:100%; height:100%;}
+				#upper .follow_me ul li a img{position:absolute; left:-8px;}
+				#upper .follow_me ul li:hover a img{transform:scale(1.2,1.2);}
+				#upper .follow_me ul .top2px a img{top:2px;}
+
+				#upper:after{content:''; display:block; clear:both;}
+			
+
+			#businessman{display:block; width:100%; position:relative;}
+			#businessman span{display:inline-block; width:7%; text-align:center; font-size:14px; transform:translatey(10px);}
+			
+
+			.span1{
+			-webkit-animation:ent1 4s infinite;}
+			@keyframes ent1{
+				6%{transform:translatey(25px);}
+				12%{transform:translatey(10px);}
+			}
+			.span2{
+			-webkit-animation:ent2 4s infinite;}
+			@keyframes ent2{
+				12%{transform:translatey(25px);}
+				18%{transform:translatey(10px);}
+			}
+			.span3{
+			-webkit-animation:ent3 4s infinite;}
+			@keyframes ent3{
+				18%{transform:translatey(25px);}
+				24%{transform:translatey(10px);}
+			}
+			.span4{
+			-webkit-animation:ent4 4s infinite;}
+			@keyframes ent4{
+				24%{transform:translatey(25px);}
+				30%{transform:translatey(10px);}
+			}
+			.span5{
+			-webkit-animation:ent5 4s infinite;}
+			@keyframes ent5{
+				36%{transform:translatey(25px);}
+				42%{transform:translatey(10px);}
+			}
+			.span6{
+			-webkit-animation:ent6 4s infinite;}
+			@keyframes ent6{
+				48%{transform:translatey(25px);}
+				54%{transform:translatey(10px);}
+			}
+			.span7{
+			-webkit-animation:ent7 4s infinite;}
+			@keyframes ent7{
+				54%{transform:translatey(25px);}
+				60%{transform:translatey(10px);}
+			}
+			.span8{
+			-webkit-animation:ent8 4s infinite;}
+			@keyframes ent8{
+				60%{transform:translatey(25px);}
+				66%{transform:translatey(10px);}
+			}
+			.span9{
+			-webkit-animation:ent9 4s infinite;}
+			@keyframes ent9{
+				66%{transform:translatey(25px);}
+				72%{transform:translatey(10px);}
+			}
+			.span10{
+			-webkit-animation:ent10 4s infinite;}
+			@keyframes ent10{
+				72%{transform:translatey(25px);}
+				78%{transform:translatey(10px);}
+			}
+			.span11{
+			-webkit-animation:ent11 4s infinite;}
+			@keyframes ent11{
+				78%{transform:translatey(25px);}
+				84%{transform:translatey(10px);}
+			}
+			.span12{
+			-webkit-animation:ent12 4s infinite;}
+			@keyframes ent12{
+				84%{transform:translatey(25px);}
+				90%{transform:translatey(10px);}
+			}
+		}
+  </style>
+ </head>
+
+ <body>
+  <div id='wrap'>
+	<header id='header'>
+		<a href='index.html' title='Noah Kim'>
+			<img src='img/logo.svg' alt='logo'/>
+		</a>
+	</header>
+	<div id='container'>
+		<section id='noah'>
+			<p>
+				<span>Noah Kim</span>
+			</p>
+			<div>
+				<span>Still Young,<br/>
+				Keynesian.</span>
+			</div>
+		</section>
+		<section id='where'>
+			<p>
+				Web Developer @ 2luck
+			</p>
+		</section>
+		<section id='sns'>
+			<div>	
+				<p>
+					<a href='https://github.com/hyeongjunk05' title='LinkedIn'>
+						<img src='img/github.gif' alt='Github'/>
+					</a>
+				</p>
+				<p class='margin_flag'>
+					<a href='https://www.instagram.com/hyeongjunk05/' title='instagram'>
+						<img src='img/instagram.png' alt='Instagram'/>
+					</a>
+				</p>
+				<p>
+					<a href='https://www.facebook.com/hyeongjunk05' title='Facebook'>
+						<img src='img/Facebook.png' alt='Facebook'/>
+					</a>
+				</p>
+			</div>
+		</section>
+		<section id='attach'>
+			<span>
+				<img src='img/location.svg' alt='loaction image'/>
+			</span>
+			<span>At Crocodile Farm Field, Darwin, Australia.</span>
+		</section>
+		<section id='businessman'>
+			<span class='span1'>B</span>
+			<span class='span2'>u</span>
+			<span class='span3'>s</span>
+			<span class='span4'>i</span>
+			<span class='span5'>n</span>
+			<span class='span6'>e</span>
+			<span class='span7'>s</span>
+			<span class='span8'>s</span>
+			<span class='span9'>m</span>
+			<span class='span10'>a</span>
+			<span class='span11'>n</span>
+			<span class='span12'>.</span>
+		</section>
+	</div>
+	<div id='footerWrap'>
+		<div id='footer'>
+			<div id='upper'>
+				<ul class='wide_ul'>
+					<li>
+						<b class='white_bold'>about me</b>
+					</li>
+					<li class='padding_bottom0'>
+						<span class='intro'>Currently working at <a  href='https://www.2luck.co.kr/web/main.php' title='greencomputer link' class='orange'>2luck</a> as a Frontend Developer on visualizing Team. Our mission is to guide customers improve their experience through comfortable feeling.</span>
+					</li>
+					<li>
+						<span><img src='img/hyeongjunKim.jpg' alt='hyeongjunKim'/></span>
+					</li>
+				</ul>
+				<div class='narrow_div'>
+					<h4><b class='white_bold'>navigations</b></h4>
+					<ul>
+						<li>
+							<a href='index.html' title='Noah Kim'>Home</a>
+						</li>
+						<li>
+							<a href='https://hyeongjunk05.github.io/portfolio/index.html' title='Portfolio'>Portfolio</a>
+						</li>
+						<li>
+							<a href='diary/diary0.html' title='Lab'>Diary</a>
+						</li>
+						<li>
+							<a href='#none' title='#'>Blog</a>
+						</li>
+						<li>
+							<a href='bookshelf.html' title='#'>Bookshelf</a>
+						</li>
+						<li>
+							<a href='#none' title='#'>Newsroom</a>
+						</li>
+						<li>
+							<a href='#none' title='#'>Contact</a>
+						</li>
+					</ul>
+				</div>
+				<ul class='contact'>
+					<li>
+						<span class='white_bold'>contact</span>
+					</li>
+					<li class='position'>
+						<img src='img/compass.jpg' alt='compass'/>
+						<span class='karla'>Seoul, Korea</span>
+					</li>
+					<li class='position'>
+						<img src='img/mailbox.jpg' alt='mailbox'/>
+						<a class='karla' href='#' title='mymail'>hyeongjunk05@gmail.com</a>
+					</li>
+					<li class='white_bold'>
+						<a href='https://mail.google.com/mail/u/0/#inbox' title='sendmailtome'>send message</a>
+					</li>
+				</ul>
+				<div class='follow_me'>
+					<h4><b class='white_bold'>follow me here</b></h4>
+					<ul>
+						<li>
+							<a href='https://www.linkedin.com/in/hyeongjunk05/?fbclid=IwAR2nyw3YXVYBHrK7oCgpbZBtQlPnra0ffNZW8ksXOPQkQtAuWnT7a0gPo-E' title='linkedIn'>
+								<img src='img/linked0.png' alt='linkedIn'/>
+							</a>
+						</li>
+						<li>
+							<a href='https://www.instagram.com/hyeongjunk05/' title='insta'>
+								<img src='img/insta0.png' alt='insta'/>
+							</a>
+						</li>
+						<li class='top2px'>
+							<a href='https://www.facebook.com/hyeongjunk05' title='facebook'>
+								<img src='img/facebook0.png' alt='facebook'/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id='lower'>
+				<div>
+					<span>Made with love by Hyeongjun "HJ" Kim</span>
+					<span class='border_left'>Copyright 2019</span>
+				</div>
+				<p>
+					Download
+					<a href='https://www.facebook.com/hyeongjunk05' title='resume'>
+						<span>Resume</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>
