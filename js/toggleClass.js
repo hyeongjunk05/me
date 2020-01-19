@@ -1,9 +1,9 @@
 $(document).ready(function(){
 		
 	$('#noah p span').hover(function(){
-		$('#noah div').css({'width':'120px'});
+		$('#noah div').css({'width':'120px','display':'block'});
 		$('#noah div').stop().clearQueue().toggleClass('hehe');
-		$('#noah div span').css({'display':'inline'});
+		//$('#noah div span').css({'display':'inline'});
 		$('#where p').css({'color':'#fff'})
 		$('body').css({'backgroundImage':'url(img/background.jpg)', 'backgroundSize':'cover', 'backgroundRepeat':'no-repeat'});
 	},function(){
