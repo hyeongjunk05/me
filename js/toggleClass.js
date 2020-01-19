@@ -1,7 +1,7 @@
 $(document).ready(function(){
 		
 	$('#noah p span').hover(function(){
-		$('#noah div').css({'width':'120px','display':'block'});
+		$('#noah div').css({'width':'120px','opacity':1});
 		$('#noah div').stop().clearQueue().toggleClass('hehe');
 		//$('#noah div span').css({'display':'inline'});
 		$('#where p').css({'color':'#fff'})
