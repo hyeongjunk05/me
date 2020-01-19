@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$('#noah div').css({'width':'120px'});
 		$('#noah div').stop().clearQueue().toggleClass('hehe');
 		$('#noah div span').css({'display':'inline'});
-		$('#where p a').css({'color':'#fff'})
+		$('#where p').css({'color':'#fff'})
 		$('body').css({'backgroundImage':'url(img/background.jpg)', 'backgroundSize':'cover', 'backgroundRepeat':'no-repeat'});
 	},function(){
 		$('#noah div').css({'width':'130px'});
